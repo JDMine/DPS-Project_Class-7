@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./static/css/jatin.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+ <link rel = "icon" href =  
+"https://lh3.googleusercontent.com/ogw/ADGmqu-GC1jfcRuuofhoCMjJkqWAPB-JKFkHGXqjV6g2=s32-c-mo" type = "image/x-icon"> 
+<title>JDMine | HomePage</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="jd-bar jd-black">
+  <a href="" class="jd-button jd-bar-item">Home</a>
+  <a href="#member" class="jd-button jd-bar-item">Members</a>
+  <a href="http://triflingnova.rf.gd/Registration/" class="jd-button jd-bar-item">Signup/Login</a>
+  <a href="http://triflingnova.rf.gd/Sites" class="jd-button jd-bar-item">Uploader</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <center><img class="mySlides" src="static/images/logo (2).png"
+  style="width:37.7%">
+  <img class="mySlides" src="static/images/logo png.png"
+  style="width:50%">
+  <img class="mySlides" src="static/images/logo.png"
+  style="width:37.7%"></center>
+</section>
+
+<!-- Band Description -->
+<section class="jd-container jd-center jd-content" style="max-width:600px" id="member">
+  <h2 class="jd-wide">We are Coders</h2>
+  <p class="jd-opacity"><i>We make dynamic and responsive webpages</i></p>
+  <p class="jd-justify"></p>
+</section>
+
+<!-- Band Members -->
+<section class="jd-row-padding jd-center jd-light-grey">
+  <article class="jd-third">
+    <p>Jatin</p>
+    <img src="./static/images/unknown user.png" alt="Jatin CEO" style="width:50%">
+    <p>CEO and fullstack developer</p>
+  </article>
+  <article class="jd-third">
+    <p>Ekagrah</p>
+    <img src="./static/images/unknown user.png" alt="Ekagrah" style="width:50%">
+    <p>Coder and Manager</p>
+  </article>
+  <article class="jd-third">
+    <p>Harshit</p>
+    <img src="./static/images/unknown user.png" alt="Harshit" style="width:50%">
+    <p>Coder</p>
+  </article>
+   <article class="jd-third">
+    <p>Krishna</p>
+    <img src="./static/images/unknown user.png" alt="Krishna" style="width:50%">
+    <p>Coder</p>
+  </article>
+  <article class="jd-third">
+    <p>Dhruv</p>
+    <img src="./static/images/unknown user.png" alt="Dhruv" style="width:50%">
+    <p>Coder</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="jd-container jd-padding-64 jd-center jd-black jd-xlarge">
+    Please visit <a href="http://triflingnova.rf.gd/Sites" target="_parent">TriflingNova</a> to make your site visible accsible across the web
+    </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
